@@ -4,9 +4,9 @@ window.addEventListener('scroll', ()=>{
     
     var scroll = window.scrollY
     if(scroll>10){
-    header.style.backgroundColor = 'rgb(200, 230, 7)'
+    header.style.backgroundColor = '#94bf3f'
     }else{
-    header.style.backgroundColor = 'rgb(200, 230, 7)'
+    header.style.backgroundColor = '#94bf3f'
     }
 })
 

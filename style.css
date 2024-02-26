@@ -20,7 +20,6 @@
     font-family: "Playpen Sans", cursive;
   font-weight: 500;
   margin-left: 35px;
-  
 }
 
 body {
@@ -28,15 +27,18 @@ body {
     scroll-padding-top: 120px; 
 }
 
+
 .bievenida{
   font-family: "Shantell Sans", cursive;
   text-align: center;
+  color: #63902a;
 }
 
 .txt-bienvenida{
     font-family: "Playpen Sans", cursive;
-  font-weight: 200;
+  font-weight: 400;
     text-align: center;
+    color: #933800;
 }
 
 .li-inicio{
@@ -49,7 +51,10 @@ header {
     width: 100%;
     height: 120px; /* Altura fija para el header */
     position: fixed;
-    background-color: rgb(200, 230, 7);
+    background-image: url('img/header.jpeg');
+    background-size: cover; /* Cubre toda el área de la sección */
+    background-position: center; /* Centra la imagen en la sección */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
     top: 0;
     left: 0;
     display: flex;
@@ -65,6 +70,7 @@ header {
     cursor: pointer;
     transition: 0.5s;
     margin-left: 10px;
+    font-size: 1.2rem;
 }
 
 .main-menu {
@@ -73,6 +79,15 @@ header {
     justify-content: center;
     align-items: center;
     list-style: none;
+}
+
+.main-menu a {
+    text-decoration: none; /* Esto quita el subrayado */
+    color: rgb(0, 0, 0); /* Esto cambia el color del texto a blanco */
+}
+
+.main-menu a:hover {
+    color: #ffffff; /* Cambia el color del texto al pasar el mouse */
 }
 
 /* Estilos para los íconos */
@@ -91,25 +106,46 @@ section {
     padding: 20px; /* Padding para el contenido dentro de las secciones */
 }
 
-#inicio { background-color: #ffda49 }
-#nosotros { background-color: rgb(255, 255, 255); }
-#horario { background-color: rgb(245, 182, 255); }
-#inscripciones { background-color: #a6eaff }
-#contacto { background-color: rgb(196, 137, 255); }
-#galería { background-color: rgb(215, 255, 208); }
+#inicio {   background-image: url('img/fondo.jpg');
+    background-size: cover; /* Cubre toda el área de la sección */
+    background-position: center; /* Centra la imagen en la sección */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */}
+#nosotros {background-image: url('img/crear2.jpg');
+    background-size: cover; /* Cubre toda el área de la sección */
+    background-position: center; /* Centra la imagen en la sección */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */ }
+#horario { background-image: url('img/fondo.ubic.jpg');
+    background-size: cover; /* Cubre toda el área de la sección */
+    background-position: center; /* Centra la imagen en la sección */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */  }
+#inscripciones { background-image: url('img/fondoCeleste.jpg');
+    background-size: cover; /* Cubre toda el área de la sección */
+    background-position: center; /* Centra la imagen en la sección */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */  }
+#contacto { background-image: url('img/fondo.ubic.jpg');
+    background-size: cover; /* Cubre toda el área de la sección */
+    background-position: center; /* Centra la imagen en la sección */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */  }
+#galería { background-image: url('img/fondo-galeria.jpeg');
+    background-size: cover; /* Cubre toda el área de la sección */
+    background-position: center; /* Centra la imagen en la sección */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */ }
 
 
 .inicio-content{
   background-color: rgb(244, 244, 243);
-  height: 30rem;
-  width: 50%;
+  height: 28rem;
+  width: 40%;
   margin: 0 auto; /* Margen automático para centrar el contenido horizontalmente */
   padding: 40px; /* Espacio dentro del contenido */
   background: #fff; /* Color de fondo del contenido */
   box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave para dar profundidad */
   border-radius: 10px; /* Bordes redondeados */
-  margin-left: -1px;
-  margin-top: 10px;
+  margin-left: 70px;
+  margin-top: 27px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave opcional */
+    font-size: 15px;
+    box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.3);
 }
 
 .sub-nosotros{
@@ -129,6 +165,7 @@ section {
     font-family: "Shantell Sans", cursive;
     text-align: center;
     margin-top: 7px;
+    color: #9408a9;
 }
 
 .acerca-de-nosotros {
@@ -145,8 +182,11 @@ section {
 }
 
 .box {
-    border: 2px solid #e26b30; /* Bordes en negro */
-    background-color: #ffcba0;
+    border: 2px solid #ffffff; /* Bordes en negro */
+    background-image: url('img/box-img.png');
+    background-size: cover; /* Cubre toda el área de la sección */
+    background-position: center; /* Centra la imagen en la sección */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
     border-radius: 8px; /* Bordes redondeados */
     padding: 20px;
     margin: 15px; /* Espacio alrededor de las cajas */
@@ -215,10 +255,14 @@ section {
     align-items: flex-start;
     padding: 17px;
     background-color: #f9f9f9;
+    text-align: left;
+   
 }
 
 .servicios {
     flex: 2;
+    text-align: left;
+   
 }
 
 .h3-servicio{
@@ -226,12 +270,14 @@ section {
     font-weight: 600;
     text-align: center;
     color: #b3004e;
+    
 }
 
 .p-servicio{
     font-family: "Playpen Sans", cursive;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
+   
 }
 
 .horarios {
@@ -330,6 +376,7 @@ section {
 .foto-galeria {
     width: 185px;
     height: 185px;
+    
 }
 
 .foto-galeria img {
@@ -396,14 +443,20 @@ section {
 
 
 .carousel {
-    margin-top: -450px;
-   
-    flex-basis: 45%;
+    
+    flex-basis: 40%;
     position: relative;
+    width: 100%; /* El ancho que desees para tu carrusel */
+    height: 440px; /* La altura fija para todas las imágenes */
+    position: relative; /* Posición relativa para posicionar absolutamente las imágenes internas */
+    overflow: hidden; 
+    margin-right: 4rem;
+    margin-top: 2rem
 }
 
 .carousel-images img {
     width: 100%;
+    height: 100%;
     display: none; /* Oculta todas las imágenes inicialmente */
     position: absolute;
     top: 0;
@@ -412,4 +465,90 @@ section {
 
 .carousel-images img.active {
     display: block; /* Muestra solo la imagen activa */
+}
+
+
+
+.img-inicio {
+    width:3rem;
+    height: 3rem;
+    margin-left: 1rem;
+}
+
+.img-inicio-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-nosotros {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1.2rem;
+}
+.img-nosotros-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-horario{
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1.2rem;
+}
+
+.img-horario-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-costo{
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1rem;
+}
+
+.img-costo-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-contacto{
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1.2rem;
+}
+
+.img-contacto-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-galeria{
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1.2rem;
+}
+
+.img-galeria-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-logo{
+    width: 15rem;
+    height: 8rem;
+    margin-top: 3.8rem;
+    margin-right: 1.5rem;
+}
+
+.img-logo-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
